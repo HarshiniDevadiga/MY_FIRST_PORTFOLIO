@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Harshini Devadiga, Computer Science student specializing in AI and Machine Learning.">
+<title>Harshini Devadiga | Developer Portfolio</title>
+<style>
+:root{--bg:#0b1020;--panel:#121a2e;--panel2:#17213a;--text:#f4f7ff;--muted:#aab5ce;--accent:#8b7cff;--accent2:#54d6c8;--line:rgba(255,255,255,.11)}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 80% 0%,#22204d 0,transparent 38%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1080px,90%);margin:auto}
+nav{position:sticky;top:0;z-index:5;background:rgba(11,16,32,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.navin{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:15px 0}
+.brand{font-weight:800;letter-spacing:.4px}.brand span{color:var(--accent2)}
+.navlinks{display:flex;gap:22px;flex-wrap:wrap;font-size:.92rem;color:var(--muted)}
+.navlinks a:hover,.textlink:hover{color:var(--accent2)}
+.hero{padding:94px 0 76px;display:grid;grid-template-columns:1.35fr .65fr;gap:48px;align-items:center}
+.eyebrow{color:var(--accent2);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(2.7rem,7vw,5rem);line-height:1.05;letter-spacing:-2px;margin:16px 0}
+h1 em{font-style:normal;color:var(--accent2)}
+.lead{font-size:1.12rem;color:var(--muted);max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;font-weight:700;border:1px solid var(--line);transition:.2s}
+.btn.primary{background:linear-gradient(120deg,var(--accent),#6d9cff);border:0;color:white}
+.btn:hover{transform:translateY(-2px)}
+.hero-card{background:linear-gradient(145deg,rgba(139,124,255,.18),rgba(84,214,200,.07));border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 25px 80px rgba(0,0,0,.2)}
+.orb{width:96px;height:96px;border-radius:28px;display:grid;place-items:center;font-size:2rem;font-weight:900;background:linear-gradient(140deg,var(--accent),var(--accent2));color:#0b1020;margin-bottom:22px}
+.hero-card h2{margin:0 0 8px;font-size:1.35rem}.hero-card p{margin:0;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
+.stat{background:rgba(8,12,25,.45);border:1px solid var(--line);padding:14px;border-radius:14px}
+.stat strong{display:block;font-size:1.25rem}.stat span{font-size:.8rem;color:var(--muted)}
+section{padding:60px 0}
+.section-head{margin-bottom:28px}.section-head .eyebrow{margin-bottom:8px}
+h2.section-title{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.15;margin:0 0 10px;letter-spacing:-.7px}
+.section-desc{color:var(--muted);margin:0;max-width:680px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{padding:24px;background:linear-gradient(145deg,rgba(23,33,58,.94),rgba(18,26,46,.94));border:1px solid var(--line);border-radius:18px}
+.card h3{margin:0 0 8px;font-size:1.12rem}.card p{color:var(--muted);margin:0 0 15px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.tag{font-size:.78rem;color:#d8e0f5;border:1px solid var(--line);background:rgba(255,255,255,.04);border-radius:999px;padding:5px 10px}
+.textlink{color:var(--accent2);font-weight:700;font-size:.92rem}
+.skillgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.skillgroup h3{margin:0 0 10px}.skillgroup p{color:var(--muted);margin:0}
+.timeline{display:grid;gap:14px}.timeline .card{display:flex;gap:16px;align-items:flex-start}
+.dot{width:12px;height:12px;flex:0 0 12px;border-radius:50%;background:var(--accent2);margin-top:8px;box-shadow:0 0 0 5px rgba(84,214,200,.12)}
+.contact{background:linear-gradient(120deg,rgba(139,124,255,.14),rgba(84,214,200,.08));border:1px solid var(--line);border-radius:24px;padding:32px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.88rem}
+.small{font-size:.85rem;color:var(--muted)}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:60px;gap:30px}.grid,.skillgrid{grid-template-columns:1fr}.navin{align-items:flex-start;flex-direction:column}.navlinks{gap:14px}.contact{flex-direction:column;align-items:flex-start}section{padding:44px 0}}
+</style>
+</head>
+<body>
+<nav><div class="wrap navin"><a class="brand" href="#home">HD<span>.</span></a><div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></div></div></nav>
+<main>
+<header class="wrap hero" id="home">
+  <div>
+    <div class="eyebrow">Computer Science · AI &amp; Machine Learning</div>
+    <h1>Hi, I'm<br><em>Harshini Devadiga.</em></h1>
+    <p class="lead">I’m a Computer Science student exploring software development, Python, data analytics, and AI/ML. I enjoy learning by building practical projects and solving problems step by step.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">Explore my projects ↘</a>
+      <a class="btn" href="https://github.com/HarshiniDevadiga" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn" href="https://www.linkedin.com/in/harshini-devadiga-482347408" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+  <aside class="hero-card">
+    <div class="orb">HD</div>
+    <h2>Curious mind. Practical builder.</h2>
+    <p>Currently strengthening my programming, database, web development, and AI/ML foundations.</p>
+    <div class="stats">
+      <div class="stat"><strong>9.19</strong><span>CGPA</span></div>
+      <div class="stat"><strong>2027</strong><span>Expected graduation</span></div>
+    </div>
+  </aside>
+</header>
+
+<section id="about"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">A little about me</div><h2 class="section-title">Learning by building.</h2>
+  <p class="section-desc">I’m pursuing a B.E. in Computer Science and Engineering (AI &amp; ML) at AJ Institute of Engineering and Technology. My goal is to grow into a capable software developer while continuing to explore intelligent, data-driven solutions.</p></div>
+  <div class="grid">
+    <article class="card"><h3>What I’m working toward</h3><p>Building a strong foundation in programming, data structures, databases, and software development, while exploring how AI/ML can solve real-world problems.</p></article>
+    <article class="card"><h3>What matters to me</h3><p>Clear problem-solving, continuous learning, teamwork, and turning classroom concepts into useful projects.</p></article>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">My toolkit</div><h2 class="section-title">Skills &amp; areas of learning</h2><p class="section-desc">A snapshot of my current learning areas. This section can be updated as I gain more hands-on experience.</p></div>
+  <div class="skillgrid">
+    <article class="card skillgroup"><h3>Programming</h3><div class="tags"><span class="tag">Python</span><span class="tag">C</span><span class="tag">C++</span><span class="tag">Java</span></div><p>Programming fundamentals, logic, and problem-solving practice.</p></article>
+    <article class="card skillgroup"><h3>Web &amp; databases</h3><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">SQL</span><span class="tag">MySQL</span></div><p>Building simple web applications and working with stored data.</p></article>
+    <article class="card skillgroup"><h3>Exploring</h3><div class="tags"><span class="tag">AI/ML</span><span class="tag">Data Analytics</span><span class="tag">DSA</span><span class="tag">GitHub</span></div><p>Developing analytical thinking and practical project skills.</p></article>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">Selected work</div><h2 class="section-title">Projects</h2><p class="section-desc">Projects I’ve worked on or am developing. Open the GitHub profile to explore available source code; individual repository links can be added when confirmed.</p></div>
+  <div class="grid">
+    <article class="card"><h3>Personal Expense Tracker</h3><p>A web application concept for recording daily expenses, reviewing spending history, and tracking a budget to better understand spending habits.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap</span><span class="tag">PHP</span><span class="tag">MySQL</span></div><a class="textlink" href="https://github.com/HarshiniDevadiga" target="_blank" rel="noopener">Explore GitHub profile ↗</a></article>
+    <article class="card"><h3>PassitOn — Campus Marketplace</h3><p>A student-focused buy, sell, and exchange platform concept for campus essentials such as books, electronics, and study materials.</p><div class="tags"><span class="tag">Web Development</span><span class="tag">Database Design</span><span class="tag">Problem Solving</span></div><a class="textlink" href="https://github.com/HarshiniDevadiga" target="_blank" rel="noopener">Explore GitHub profile ↗</a></article>
+    <article class="card"><h3>Smart Campus Complaint &amp; Maintenance App</h3><p>A campus solution concept to submit infrastructure complaints, track their status, and coordinate maintenance requests.</p><div class="tags"><span class="tag">Software Engineering</span><span class="tag">Web Application</span><span class="tag">Workflow Design</span></div><a class="textlink" href="https://github.com/HarshiniDevadiga" target="_blank" rel="noopener">Explore GitHub profile ↗</a></article>
+    <article class="card"><h3>AI-Powered Resume &amp; Career Profile System</h3><p>A proposed system to help users create resumes and manage career profiles with AI-assisted suggestions and structured information.</p><div class="tags"><span class="tag">AI/ML Concept</span><span class="tag">Career Technology</span><span class="tag">Product Design</span></div><a class="textlink" href="https://github.com/HarshiniDevadiga" target="_blank" rel="noopener">Explore GitHub profile ↗</a></article>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">Academic journey</div><h2 class="section-title">Education &amp; learning</h2></div>
+  <div class="timeline">
+    <article class="card"><span class="dot"></span><div><h3>B.E. — Computer Science &amp; Engineering (AI &amp; ML)</h3><p>AJ Institute of Engineering and Technology (AJIET), Mangaluru</p><p class="small">Expected graduation: June 2027 · CGPA: 9.19</p></div></article>
+    <article class="card"><span class="dot"></span><div><h3>Certifications &amp; continuous learning</h3><p>Python Fundamentals and Basics of Python (Infosys Springboard); Introduction to Data Analytics (Simplilearn SkillUp); An Introduction to Electronics (OpenLearn).</p><p class="small">Add certificate links here as they become available.</p></div></article>
+    <article class="card"><span class="dot"></span><div><h3>Activities</h3><p>Participated in BLUE HARVEST Ideathon 2026, exploring a coastal erosion risk prediction idea focused on sustainability and early warning.</p></div></article>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="contact"><div><div class="eyebrow">Let’s connect</div><h2 class="section-title">Open to learning and collaboration.</h2><p class="section-desc">Feel free to connect with me professionally or explore my code and projects.</p></div>
+  <div class="actions"><a class="btn primary" href="https://www.linkedin.com/in/harshini-devadiga-482347408" target="_blank" rel="noopener">Connect on LinkedIn ↗</a><a class="btn" href="https://github.com/HarshiniDevadiga" target="_blank" rel="noopener">Visit GitHub ↗</a></div></div>
+</div></section>
+</main>
+<footer><div class="wrap">© <span id="year">2026</span> Harshini Devadiga · Built with HTML &amp; CSS. <span class="small">Please verify project details and add direct repository links before publishing.</span></div></footer>
+</body>
+</html>
